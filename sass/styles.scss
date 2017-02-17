@@ -1,0 +1,14 @@
+@import "../bower_components/bootstrap/dist/css/bootstrap.min.css";
+@import "fuentestexto.scss";
+@import "menu.scss";
+@import "logo.scss";
+@import "cuerpo.scss";
+@import "colores.scss";
+@import "prefooter.scss";
+@import "footer.scss";
+
+
+
+body{
+	background:$color4;
+}

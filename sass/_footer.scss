@@ -1,0 +1,40 @@
+footer{
+  padding-top: 20px;
+  background:$color1;
+  font-size: 11px;
+
+  ul{
+    color:$color4;
+    list-style: none;
+    padding-top:10px;
+    font-family: $fuentetexto, serif;
+    font-size:12px;
+    }
+    .redesfooter{
+      font-size: 20px;
+      padding-bottom:18px;
+      li{
+        border:2px solid $color4;
+        border-radius:50%;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        color:$color4;
+        background:$color1;
+        margin:2px;
+        &:hover{
+          color:$color3;
+          border:2.3px solid $color3;
+          background:$color1;
+
+        }
+        span{
+          position:relative;
+          top:5px;
+        }
+
+      }
+
+    }
+}

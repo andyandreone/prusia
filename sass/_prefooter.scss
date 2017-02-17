@@ -1,0 +1,24 @@
+.prefooter{
+  background:$color3;
+  height: 100px;
+  margin-top: 20px;
+  text-align: center;
+  height: 200px;
+  .newsletter{
+    padding-top:40px;
+  h5{
+    font-size: 20px;
+    color:$color1;
+    font-family:$fuentetitulo, sans-serif;
+    
+    }
+  }
+  .btn-default{
+  	background:$color1;
+  	color:$color4;
+  	border: $color1;
+  	&:hover{
+  		background:$color2;
+  	}
+  }
+}
