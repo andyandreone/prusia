@@ -2,6 +2,9 @@ footer{
   padding-top: 20px;
   background:$color1;
   font-size: 11px;
+  @media screen and(max-width:1000px){
+  	text-align: center;
+  }
 
   ul{
     color:$color4;

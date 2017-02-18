@@ -6,6 +6,13 @@
   height: 200px;
   .newsletter{
     padding-top:40px;
+    @media screen and(max-width:1000px){
+    	text-align: center;
+    	input{
+    		width: 300px;
+    		display: inline-block;
+    	}		
+    }
   h5{
     font-size: 20px;
     color:$color1;

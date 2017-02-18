@@ -16,52 +16,76 @@
   border-color: #003153;
 }
 
-/* line 15, ../sass/_menu.scss */
-.ion-navicon-round {
+/* line 14, ../sass/_menu.scss */
+.navbar-right {
+  display: inline-block;
+  float: right;
+}
+@media screen and (max-width: 1000px) {
+  /* line 14, ../sass/_menu.scss */
+  .navbar-right {
+    text-align: right;
+  }
+}
+/* line 21, ../sass/_menu.scss */
+.navbar-right .ion-navicon-round {
   font-size: 23px;
 }
 
-/* line 18, ../sass/_menu.scss */
+/* line 25, ../sass/_menu.scss */
 .redes {
   margin-right: 40px;
   padding: 14px;
+  display: inline-block;
 }
-/* line 21, ../sass/_menu.scss */
+/* line 29, ../sass/_menu.scss */
 .redes li {
-  width: 23px;
-  height: 23px;
+  list-style: none;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   background: white;
   margin: 0 7px;
+  display: inline-block;
+  text-align: center;
 }
-/* line 27, ../sass/_menu.scss */
+/* line 38, ../sass/_menu.scss */
 .redes li:hover {
   background: #fca311;
 }
-/* line 29, ../sass/_menu.scss */
+/* line 40, ../sass/_menu.scss */
 .redes li:hover span {
   color: black;
 }
-/* line 33, ../sass/_menu.scss */
+/* line 44, ../sass/_menu.scss */
 .redes li span {
-  font-size: 15px;
+  font-size: 20px;
   color: #003153;
   position: relative;
-  bottom: 12px;
-}
-/* line 39, ../sass/_menu.scss */
-.redes li .ion-social-facebook {
-  right: 6px;
-}
-/* line 42, ../sass/_menu.scss */
-.redes li .ion-social-twitter {
-  right: 10px;
+  top: 2px;
 }
 
-/* line 56, ../sass/_menu.scss */
+/* line 63, ../sass/_menu.scss */
 .dropdown-menu li:hover a {
   background: #003153;
   color: white;
+}
+@media screen and (max-width: 1000px) {
+  /* line 60, ../sass/_menu.scss */
+  .dropdown-menu {
+    text-align: center;
+  }
+  /* line 71, ../sass/_menu.scss */
+  .dropdown-menu li {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 77, ../sass/_menu.scss */
+  .seccionesMenu {
+    display: none;
+  }
 }
 
 /* HSL */
@@ -93,13 +117,20 @@ h3 {
 .bloqueLargo {
   height: 350px;
 }
-/* line 7, ../sass/_cuerpo.scss */
+@media screen and (max-width: 1000px) {
+  /* line 4, ../sass/_cuerpo.scss */
+  .bloqueLargo {
+    text-align: center;
+    margin: 30px 0 150px 0;
+  }
+}
+/* line 11, ../sass/_cuerpo.scss */
 .bloqueLargo img {
   margin-top: 10px;
   max-width: 100%;
   max-height: 340px;
 }
-/* line 14, ../sass/_cuerpo.scss */
+/* line 19, ../sass/_cuerpo.scss */
 .bloqueLargo .col-md-5 h3 {
   font-size: 28px;
   font-family: Montserrat, sans-serif;
@@ -107,7 +138,7 @@ h3 {
   margin: 15px 6px;
   padding: 0;
 }
-/* line 22, ../sass/_cuerpo.scss */
+/* line 27, ../sass/_cuerpo.scss */
 .bloqueLargo .col-md-5 p {
   font-size: 18px;
   font-family: Libre Franklin, sans-serif;
@@ -116,26 +147,32 @@ h3 {
   padding: 0;
 }
 
-/* line 35, ../sass/_cuerpo.scss */
+/* line 40, ../sass/_cuerpo.scss */
 .bloqueAlto {
   background: white;
   height: 700px;
   text-align: center;
 }
-/* line 39, ../sass/_cuerpo.scss */
+@media screen and (max-width: 1000px) {
+  /* line 40, ../sass/_cuerpo.scss */
+  .bloqueAlto {
+    height: 750px;
+  }
+}
+/* line 49, ../sass/_cuerpo.scss */
 .bloqueAlto img {
   margin-top: 15px;
   max-width: 100%;
   max-height: 500px;
 }
-/* line 44, ../sass/_cuerpo.scss */
+/* line 54, ../sass/_cuerpo.scss */
 .bloqueAlto h3 {
   font-size: 30px;
   font-family: Montserrat, sans-serif;
   color: #fca311;
   margin: 15px 6px;
 }
-/* line 51, ../sass/_cuerpo.scss */
+/* line 61, ../sass/_cuerpo.scss */
 .bloqueAlto p {
   font-size: 18px;
   font-family: Libre Franklin, sans-serif;
@@ -143,24 +180,31 @@ h3 {
   margin: 15px 0;
 }
 
-/* line 62, ../sass/_cuerpo.scss */
+/* line 72, ../sass/_cuerpo.scss */
 .bloqueNormal {
   height: 400px;
 }
-/* line 65, ../sass/_cuerpo.scss */
+@media screen and (max-width: 1000px) {
+  /* line 72, ../sass/_cuerpo.scss */
+  .bloqueNormal {
+    text-align: center;
+    margin: 30px 0;
+  }
+}
+/* line 80, ../sass/_cuerpo.scss */
 .bloqueNormal img {
   margin-top: 10px;
   max-width: 100%;
   max-height: 250px;
 }
-/* line 70, ../sass/_cuerpo.scss */
+/* line 85, ../sass/_cuerpo.scss */
 .bloqueNormal h3 {
   font-size: 22px;
   font-family: Montserrat, sans-serif;
   color: #fca311;
   margin: 15px 6px;
 }
-/* line 77, ../sass/_cuerpo.scss */
+/* line 92, ../sass/_cuerpo.scss */
 .bloqueNormal p {
   font-size: 14px;
   font-family: Libre Franklin, sans-serif;
@@ -168,12 +212,23 @@ h3 {
   margin: 15px 0;
 }
 
-/* line 88, ../sass/_cuerpo.scss */
+/* line 102, ../sass/_cuerpo.scss */
+.tituloAlaizquierda {
+  text-align: left;
+}
+@media screen and (max-width: 1000px) {
+  /* line 102, ../sass/_cuerpo.scss */
+  .tituloAlaizquierda {
+    text-align: center;
+  }
+}
+
+/* line 109, ../sass/_cuerpo.scss */
 .textoAlaizquierda {
   text-align: left;
 }
 
-/* line 92, ../sass/_cuerpo.scss */
+/* line 113, ../sass/_cuerpo.scss */
 .otrasNoticias {
   margin-top: 45px;
 }
@@ -192,19 +247,30 @@ h3 {
 .prefooter .newsletter {
   padding-top: 40px;
 }
-/* line 9, ../sass/_prefooter.scss */
+@media screen and (max-width: 1000px) {
+  /* line 7, ../sass/_prefooter.scss */
+  .prefooter .newsletter {
+    text-align: center;
+  }
+  /* line 11, ../sass/_prefooter.scss */
+  .prefooter .newsletter input {
+    width: 300px;
+    display: inline-block;
+  }
+}
+/* line 16, ../sass/_prefooter.scss */
 .prefooter .newsletter h5 {
   font-size: 20px;
   color: black;
   font-family: Montserrat, sans-serif;
 }
-/* line 16, ../sass/_prefooter.scss */
+/* line 23, ../sass/_prefooter.scss */
 .prefooter .btn-default {
   background: black;
   color: #e5e5e5;
   border: black;
 }
-/* line 20, ../sass/_prefooter.scss */
+/* line 27, ../sass/_prefooter.scss */
 .prefooter .btn-default:hover {
   background: #003153;
 }
@@ -215,7 +281,13 @@ footer {
   background: black;
   font-size: 11px;
 }
-/* line 6, ../sass/_footer.scss */
+@media screen and (max-width: 1000px) {
+  /* line 1, ../sass/_footer.scss */
+  footer {
+    text-align: center;
+  }
+}
+/* line 9, ../sass/_footer.scss */
 footer ul {
   color: #e5e5e5;
   list-style: none;
@@ -223,12 +295,12 @@ footer ul {
   font-family: Libre Franklin, serif;
   font-size: 12px;
 }
-/* line 13, ../sass/_footer.scss */
+/* line 16, ../sass/_footer.scss */
 footer .redesfooter {
   font-size: 20px;
   padding-bottom: 18px;
 }
-/* line 16, ../sass/_footer.scss */
+/* line 19, ../sass/_footer.scss */
 footer .redesfooter li {
   border: 2px solid #e5e5e5;
   border-radius: 50%;
@@ -240,13 +312,13 @@ footer .redesfooter li {
   background: black;
   margin: 2px;
 }
-/* line 26, ../sass/_footer.scss */
+/* line 29, ../sass/_footer.scss */
 footer .redesfooter li:hover {
   color: #fca311;
   border: 2.3px solid #fca311;
   background: black;
 }
-/* line 32, ../sass/_footer.scss */
+/* line 35, ../sass/_footer.scss */
 footer .redesfooter li span {
   position: relative;
   top: 5px;

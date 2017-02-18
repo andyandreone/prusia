@@ -11,37 +11,44 @@
     background-color: $color2;
     border-color: $color2;
 }
-
+.navbar-right{
+	display:inline-block;
+	float: right;
+	@media screen and(max-width:1000px){
+		text-align: right;
+		
+	}		
 .ion-navicon-round{
 	font-size:23px;
 	}
+}	
 .redes{
 	margin-right:40px;
 	padding:14px;
+	display:inline-block;
 	li{
-		width: 23px;
-		height: 23px;
+		list-style:none;
+		width: 25px;
+		height: 25px;
 		border-radius:50%;
 		background:$color5;
 		margin: 0 7px;
+		display: inline-block;
+		text-align: center;
 		&:hover{
 			background:$color3;
 			span{
 			color:$color1;
 			}
 		}
-		span{
-		font-size:15px;
+		span{	
+		font-size:20px;
 		color:$color2;
 		position: relative;
-		bottom:12px;
+		top:2px;
+		
 		}
-		.ion-social-facebook{
-		right: 6px;
-		}
-		.ion-social-twitter{
-		right: 10px;
-		}
+		
 
 			
 		
@@ -58,5 +65,17 @@
 			color: $color5;
 			}
 		}
+	}
+	@media screen and(max-width:1000px){
+		text-align: center;
+		li{
+			color:$color5;
+		}
+	}
+}
+
+.seccionesMenu{
+	@media screen and (max-width: 1000px) {
+		display: none;
 	}
 }
